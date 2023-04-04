@@ -93,12 +93,12 @@ x = 0
 y = 0
 
 while x <= y or x > 1000 or y > 1000 or a == True:
-    x = int(input(" Enter the 1st number between 1-1000: "))
-    y = int(input(" Enter the 2nd number between 1-1000: "))
+    x = int(input(" Write the 1st number between 1-1000: "))
+    y = int(input(" Write the 2nd number between 1-1000: "))
 
     if x <= y or x > 1000 or y > 1000:
         print(
-            "Error.First number must be greater, both numbers must be between 1-1000.")
+            "Error. The first number must be higher, and both numbers must range from 1 to 1000.")
 
     else:
         a = False

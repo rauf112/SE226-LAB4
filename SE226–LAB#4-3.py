@@ -90,8 +90,8 @@ words = ["a", "ability", "able", "about", "above", "accept", "according", "accou
          "word", "work", "worker", "world", "worry", "would", "write", "writer", "wrong", "yard", "yeah", "year", "yes",
          "yet", "you", "young", "your", "yourself"]
 
-shorter = set()
-longer = set()
+short = set()
+long = set()
 for i in range(8):
     user_number = input("Write a number between 3 and 7:  ")
 
@@ -103,10 +103,10 @@ for i in range(8):
     password = "".join(passwordWords)[::-1]
 
     if int(user_number) < 5:
-        shorter.add(password)
+        short.add(password)
     else:
-        longer.add(password)
+        long.add(password)
 
-print("Shorter passwords:", shorter)
-print("Longer passwords:", longer)
-print("All passwords:", shorter.union(longer))
+print("Short passwords:", short)
+print("Long passwords:", long)
+print("All passwords:", short.union(long))
